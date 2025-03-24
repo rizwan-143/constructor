@@ -128,48 +128,48 @@
 // Ek function displayAllStudents banayein jo studentsList mein sare students ki details display kare.''
 
 
-function Students(studentName, studentAge , studentGrade , studentRollNo){
+// function Students(studentName, studentAge , studentGrade , studentRollNo){
 
-    this.studentName = studentName, 
-    this.studentAge = studentAge, 
-    this.studentGrade = studentGrade,
-    this.studentRollNo = studentRollNo
-}
+//     this.studentName = studentName, 
+//     this.studentAge = studentAge, 
+//     this.studentGrade = studentGrade,
+//     this.studentRollNo = studentRollNo
+// }
 
 
-Students.prototype.displayDetails = function(){
-    console.log(`student name : ${this.studentName} , student age : ${this.studentAge} , student grade : ${this.studentGrade} , student rollno : ${this.studentRollNo}`);
+// Students.prototype.displayDetails = function(){
+//     console.log(`student name : ${this.studentName} , student age : ${this.studentAge} , student grade : ${this.studentGrade} , student rollno : ${this.studentRollNo}`);
     
-}
+// }
 
 
-let studentsList = [];
+// let studentsList = [];
 
 
-Students.prototype.addStudent = function(studentName , studentAge, studentGrade , studentRollNo){
-    let newStudent = new Students(studentName , studentAge , studentGrade , studentRollNo);
-    studentsList.push(newStudent);
-    console.log(`student ${this.studentName} added`);
+// Students.prototype.addStudent = function(studentName , studentAge, studentGrade , studentRollNo){
+//     let newStudent = new Students(studentName , studentAge , studentGrade , studentRollNo);
+//     studentsList.push(newStudent);
+//     console.log(`student ${this.studentName} added`);
     
-}
+// }
 
 
-function findStudentByRollNo(studentRollNo){
-    let student = studentsList.find( student => student.studentRollNo === studentRollNo );
-    if(student){
-        console.log("student found with roll no " , studentRollNo);
-        student1.displayDetails();
+// function findStudentByRollNo(studentRollNo){
+//     let student = studentsList.find( student => student.studentRollNo === studentRollNo );
+//     if(student){
+//         console.log("student found with roll no " , studentRollNo);
+//         student1.displayDetails();
         
-    }else{
-        console.log("student not found with roll no " , studentRollNo);
+//     }else{
+//         console.log("student not found with roll no " , studentRollNo);
         
-    }
-}
+//     }
+// }
 
-const student1 = new  Students ("rizwan " , 23 , "A" , 220516);
-// student1.displayDetails();
-student1.addStudent();
-findStudentByRollNo(220518);
+// const student1 = new  Students ("rizwan " , 23 , "A" , 220516);
+// // student1.displayDetails();
+// student1.addStudent();
+// findStudentByRollNo(220518);
 
 
 
@@ -254,6 +254,52 @@ findStudentByRollNo(220518);
 
 
 
+// function Employee(employeeName , employeeAge , employeeSalary){
+//     this.employeeName = employeeName,
+//     this.employeeAge = employeeAge ,
+//      this.employeeSalary = employeeSalary
+// }
 
 
+
+//  Employee.prototype.employeeDetails = function (){
+//     console.log(`Employee Name is : ${this.employeeName} , Employee Age is : ${this.employeeAge} , Employee Salary is : ${this.employeeSalary}`);
+//  }
+
+
+//  const employeeRizwan = new Employee ("rizwan" , 23 , 2000);
+
+//  employeeRizwan.employeeDetails();
+
+
+
+// Task: Create a Student Management System
+// Requirements:
+// Create a Student constructor that initializes:
+
+// name (string)
+
+// age (number)
+
+// rollNumber (string)
+
+// subjects (array of strings)
+
+// Add methods to the constructor prototype:
+
+// addSubject() - to add new subjects
+
+// removeSubject() - to remove subjects
+
+// getDetails() - returns student information
+
+// Create a School constructor that:
+
+// Maintains an array of students
+
+// Can add new students
+
+// Can find students by roll number
+
+// Can get all students taking a specific subject
 
